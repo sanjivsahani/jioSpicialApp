@@ -56,7 +56,7 @@ const Signup = () => {
             <div className='text-center my-2'>
                 
             <span text-bold>
-                    Already have an account<Link to="/" >Login </Link>
+                    Already have an account<Link to="/table" >Login </Link>
                 </span>
                      
                

@@ -10,7 +10,7 @@ import Dashboard from './componet/Dashboard';
 
 import Head from './componet/head';
 import Login from './componet/Login'
-import RTable from './componet/RTable';
+import Tables from './componet/Tables';
 import SideNav from './componet/SideNav';
 import Signup from './componet/Signup'
 
@@ -20,7 +20,6 @@ function App() {
     <div className="App">
 
       <BrowserRouter>
-
         <Head />
         <div className="container-fluid">
           <div className="row">
@@ -32,7 +31,7 @@ function App() {
                 <Route path="/" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/home" element={<Dashboard />} />
-                <Route path="/table" element={<RTable />} />
+                <Route path="/table" element={<Tables />} />
               </Routes>
             </div>
           </div>

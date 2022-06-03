@@ -14,7 +14,8 @@ app.use(express.json())
 
 const PORT = 8000
 app.use('/api/user', require('./router/auth'))
-app.use('/api/student', require('./router/student'))
+// app.use('/api/student', require('./router/student'))
+app.use('/api/student',require('./router/student'))
 
 // lstener
 

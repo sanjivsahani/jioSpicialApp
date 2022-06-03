@@ -1,11 +1,14 @@
  import React from 'react'
-import Chart_Bar from './Chart_Bar'
+import Chart from './Chart_Bar'
+// import LineChartG from './LineChartG'
+ 
  
  const Dashboard = () => {
    return (
      <div>
-       
-       <Chart_Bar/>
+       <h3>chart Herre</h3>
+       <Chart />
+       {/* <LineChartG/> */}
      </div>
    )
  }

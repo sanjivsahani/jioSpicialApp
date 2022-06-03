@@ -46,7 +46,7 @@ const Login = () => {
             </div>
             <div className='text-center my-2 flex'>
                 <span>
-                    Dont have an account<Link to="/signup" >Signup </Link>
+                    Dont have an account<Link to="/table" >Signup </Link>
                 </span>
 
 

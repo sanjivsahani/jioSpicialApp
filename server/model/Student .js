@@ -1,25 +1,19 @@
 const mongoose = require("mongoose")
-
+ 
 const StudentSchema = new mongoose.Schema({
     name: {
-        type: String,
-       
+        type:String
     },
-    age:{
-        type: String,
-       
+    age: {
+        type:String
     },
-    contactno: {
-        type:String,
-       
+    contact:{
+        type:String
     },
-    studentid: {
-        type:String,
-       
-    },
-    createdAt: {
-        type: Date,
-        default:Date.now
+    studentId: {
+        type:String
     }
 })
-module.exports = mongoose.model("sudent",StudentSchema)
+const StudentModal =  mongoose.model("student", StudentSchema)
+
+module.exports = StudentModal;

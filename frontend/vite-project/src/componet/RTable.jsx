@@ -18,13 +18,26 @@ const RTable = () => {
     useEffect(() => {
         fetch_student()
     }, [])
-   
+
     return (
         <>
 
-           <DataUpload/>
+            <DataUpload />
             <hr />
-            <h3 className='text-center'> Student Table</h3>
+            <div className="container d-flex">
+                <div className="container">
+
+                    <h3 className='text-center'> Student Table</h3>
+                </div>
+                <div className="container d-flex m-2">
+                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button className="btn btn-success btn-sm" type="submit">Search</button>
+
+                </div>
+
+            </div>
+
+
             <div className='container mx-2'>
                 <table className="table">
                     <thead >
@@ -34,7 +47,7 @@ const RTable = () => {
                             <th scope="col">Age</th>
                             <th scope="col">Phone</th>
                             <th scope="col">Student ID</th>
-
+                            <th scope="col">Student ID</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -44,10 +57,16 @@ const RTable = () => {
                                     <th scope="row">{ind + 1}</th>
                                     <td>{ele.name}</td>
                                     <td>{ele.age} year</td>
-                                    <td>{ele.phone}</td>
-                                    <td> <button className="btn-primary btn-sm"></button></td>
+                                    <td>{ele.contact}</td>
+                                    <td>{ele.studentId}</td>
+                                    <td>
+                                        <button className='btn btn-primary btn-sm mx-2' >Edit</button>
+                                        <button className='btn btn-danger btn-sm mx-2' >del</button>
+
+                                    </td>
+
                                 </tr>
-                                
+
                             })
                         }
                     </tbody>

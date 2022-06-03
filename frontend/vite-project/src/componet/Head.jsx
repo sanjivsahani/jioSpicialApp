@@ -21,8 +21,9 @@ const Head = () => {
         })
     }
 
-    // const Check = CheckLogin()
-    // console.log(Check)
+    useEffect(() => {
+     getuser() 
+  },[])
 
     return (
         <nav className=" navbar navbar-expand-lg bg-dark navbar-dark">
@@ -55,10 +56,9 @@ const Head = () => {
                         </li>
                     </ul>
                     <form className="d-flex" role="search">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                            <button className="btn btn-outline-success" type="submit">Search</button>
+                       <button className="btn btn-danger" onClick={logout_func}>Logout</button>
                     </form>
-                </div>
+                </div>  
             </div>
         </nav>
     )
