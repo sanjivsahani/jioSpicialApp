@@ -38,6 +38,7 @@ const DataUpload = () => {
             Json_data.push(res)
         }
         setfileData(Json_data)
+        console.log(fileData)
        async function dataupload () {
             try {
                 var config = {
